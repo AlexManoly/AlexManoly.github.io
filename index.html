@@ -1,0 +1,559 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>Фінальний проект</title>
+</head>
+<body>
+<div class="header">
+    <div class="logoCase">
+    <img src="img/logo.jpg" class="logo" alt="">
+<span>Олександр Манолій</span>
+    </div>
+    <ul class="menu">
+        <li><a href="">Головна</a></li>
+        <li><a href="#aboutB">Про мене</a></li>
+        <li><a href="#lectureB">Лекції</a></li>
+        <li><a href="#worksB">Робота</a></li>
+        <li><a href="#contactsB">Контакти</a></li>
+    </ul>
+</div>
+<div class="about" id="aboutB">
+    <button type="button" class="btn btn-primary info" data-toggle="modal" data-target="#exampleModalCenter">
+    Натисни щоб взнати про мене!
+</button>
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalCenterTitle">Про мене</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body aboutM">
+                    <img src="img/logo.jpg" class="progPic" alt="">
+                    <div class="textModal">
+                    <h3>Привіт</h3>
+                   <p>Мене звуть Олександр Манолій. Я працюю вчителем в ЗОШ №3 міста Роздільна.</p>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="mySkils" id="lectureB">
+<h2>Лекції</h2>
+    <div class="cardsCase" >
+
+    <div class="card ">
+        <img class="card-img-top" src="img/c-plus-plus.png" alt="Card image cap">
+        <div class="card-body"   >
+            <p class="card-text">С++ лекції</p>
+            <div class="lecturesLinks">
+            <a data-toggle="modal" data-target="#lectionC1">
+                Історія створення С++
+            </a>
+                <a data-toggle="modal" data-target="#lectionC2">
+                Етапи розробки
+                </a>
+                <a data-toggle="modal" data-target="#lectionC3">
+                Перша програма
+                </a>
+            </div>
+            <div class="lectures">
+            <div class="modal fade" id="lectionC1" tabindex="-1" role="dialog" aria-labelledby="titleC1" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered" style="width: 70%" role="document"">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="titleC1">Історія створення С++</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body lecture1">
+                            <img src="img/c++.png" class="progPic" alt="">
+                            <div class="lecture1txt">
+                                <h3>Історія появи</h3>
+                                
+                              <p style="text-align:left;"> Мова виникла на початку 1980-х років, коли співробітник фірми Bell Labs Бйорн Страуструп придумав ряд удосконалень до мови C під власні потреби. Коли в кінці 1970-х років Страуструп почав працювати в Bell Labs над завданнями теорії черг (в додатку до моделювання телефонних викликів), він виявив, що спроби застосування існуючих в той час мов моделювання виявились неефективними, а застосування високоефективних машинних мов занадто складно із- за їх обмеженої виразності. Так, мова Симула має такі можливості, які були б дуже корисні для розробки великого програмного забезпечення, але працює дуже повільно, а мова BCPL досить швидка, але дуже близька до мов низького рівня і не підходить для розробки великого програмного забезпечення.</p>
+
+                               <p style="text-align:left;"> Згадавши досвід своєї дисертації, Страуструп вирішив доповнити мову C (наступник BCPL) можливостями, наявними в мові Симула. Мова C, будучи базовою мовою системи UNIX, на якій працювали комп'ютери Bell, є швидкою, багатофункціональною і переноситься.Страуструп додав до неї можливість роботи з класами та об'єктами. В результаті практичні задачі моделювання виявилися доступними для вирішення як з точки зору часу розробки (завдяки використанню Симула-подібних класів), так і з точки зору часу обчислень (завдяки швидкодії C). В першу чергу в C були додані класи (з інкапсуляцією), успадкування класів, сувора перевірка типів, inline-функції і аргументи за замовчуванням. Ранні версії мови, спочатку іменувався «C with classes» ( «Сі з класами»), стали доступні з 1980 року.</p>
+
+                                <p style="text-align:left;">Розробляючи C з класами, Страуструп написав програму cfront [en] - транслятор, що переробляє вихідний код C з класами в вихідний код звичайного C. Це дозволило працювати над новою мовою і використовувати її на практиці, застосовуючи вже наявну в UNIX інфраструктуру для розробки на C. Нова мова, несподівано для автора, набула великої популярності серед колег і незабаром Страуструп вже не міг особисто підтримувати її, відповідаючи на тисячі запитань.</p>
+
+                                <p style="text-align:left;">До 1983 року в мову були додані нові можливості, такі як віртуальні функції, перевантаження функцій і операторів, посилання, константи, призначений для користувача контроль над управлінням вільною пам'яттю, поліпшена перевірка типів і новий стиль коментарів (//). Отримана мова вже перестала бути просто доповненою версією класичного C і була перейменована з C з класами в «C ++». Її перший комерційний випуск відбувся в жовтні 1985 року.</p>
+
+                               <p style="text-align:left;">До початку офіційної стандартизації мова розвивалася в основному силами Страуструпа у відповідь на запити співтовариства програмістів. Функції стандартних описів мови виконували написані Страуструпом друковані роботи по C ++ (опис мови, довідкове керівництво і так далі). Лише в 1998 році був ратифікований міжнародний стандарт мови C ++: ISO / IEC 14882: 1998 «Standard for the C ++ Programming Language»; після прийняття технічних виправлень до стандарту в 2003 році - наступна версія цього стандарту - ISO / IEC 14882: 2003</p>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal fade" id="lectionC2" tabindex="-1" role="dialog" aria-labelledby=" titleC2" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered" style="width: 70%" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="titleC2">Етапи розробки</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body lecture1">
+                            <img src="img/c++.png" class="progPic" alt="">
+                            <div class="lecture1txt">
+                               <h3> Етапи створення програми </h3>
+<h6>Етап 1: визначення цілей програми</h6>
+<p style="text-align:left;">Цілком природно, ви повинні починати з чіткого уявлення про те, що, на вашу думку, програма буде робити. Подумайте над тим, яка інформація потрібна програмі, які вона повинна виконувати обчислення і маніпуляції, а також про те, яку інформацію вона повинна повертати. На цьому рівні планування слід мислити загальними поняттями, а не поняттями якоїсь конкретної комп’ютерної мови.</p>
+
+<h6>Етап 2: проектування програми</h6>
+<p style="text-align:left;">Яким повинен бути інтерфейс користувача? Як повинна бути організована ця програма?
+Якими будуть цільові користувачі? Скільки часу буде потрібно для завершення розробки програми?
+Також необхідно вирішити, як представляти дані в програмі, можливо, у
+допоміжних файлах, а також які методи використовувати для обробки даних.</p>
+ 
+<h6>Етап 3: написання коду</h6>
+<p style="text-align:left;">Саме на цій стадії будуть потрібні всі знання мови С++. Ви можете накидати рішення на папері, але в кінцевому підсумку складений код знадобиться ввести в комп'ютер. Механіка цього процесу залежить від середовища програмування, в якому ви працюєте. У загальному випадку ви застосовуєте текстовий редактор для створення, так званого, файлу вихідного коду. Цей файл містить представлення проекту програми на мові С++.</p>
+
+<h6>Етап 4: компіляція</h6>
+<p style="text-align:left;">Компілятор мови С++ транслює код в машинну мову. Компілятори мови С++ вставляють в фінальну програму також код з бібліотек С та С++. Ці бібліотеки містять комплект стандартних
+підпрограм. Компілятор також перевіряє, чи не має помилок програма на мові С++.</p>
+
+<h6>Етап 5: запуск програми на виконання</h6>
+<p style="text-align:left;">Середовища IDE (Integrated Development Environment - інтегроване середовище розробки), дозволяють редагувати і виконувати програми на С++ всередині середовища, вибираючи відповідні пункти меню або натискаючи спеціальні клавіші. Отриману програму можна також запустити безпосередньо з операційної системи, виконавши одинарне або подвійне клацання на імені файлу або на відповідному значку. Ми будемо працювати в середовищі MVS 2008.</p>
+
+<h6>Етап 6: тестування і налагодження програми</h6>
+<p style="text-align:left;">Налагодження - це процес виявлення та виправлення програмних помилок. Допущення помилок є природною складовою процесу навчання. Взагалі кажучи, вони притаманні програмуванню, так що, поєднуючи програмування з навчанням, будьте готовими до частих нагадувань про помилки. По мірі
+того, як ви стаєте все більш кваліфікованим і майстерним програмістом, ваші помилки також стають все більш масштабними і їх важко виявити.</p>
+
+<h6>Етап 7: супровід і модифікація програми</h6>
+<p style="text-align:left;">Коли ви створюєте програму для себе або когось іншого, то, можливо, плануєте її широке застосування. Якщо це так, то можуть з'явитися причини для внесення до неї змін.</p>
+
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+                <div class="modal fade" id="lectionC3" tabindex="-1" role="dialog" aria-labelledby="titleC3" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered" style="width: 70%" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="titleC3">Перша програма</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body lecture1">
+                                <img src="img/c++.png" class="progPic" alt="">
+                                <div class="lecture1txt">
+                                    <h3>Створення першої програми</h3>
+                                    Сама проста програма має наступний вигляд<br>
+                                   <p style="text-align:left;">
+								   <code>#include&lt;iostream&gt;<br>
+										using namespace std;<br>
+										<br>
+										int main() {</code><br>
+										<samp>оголошення  змінних і констант<br>
+										блок операторів</samp><br>
+										...<br>
+										
+									<code>	system("pause");<br>
+										return 0;<br>
+										}<br></code></p>
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="card" >
+        <img class="card-img-top" src="img/css.jpg " alt="Card image cap">
+        <div class="card-body">
+            <p class="card-text">Css лекції</p>
+            <div class="lecturesLinks">
+                <a data-toggle="modal" data-target="#lectionCss1">
+                    Lection 1
+                </a>
+                <a data-toggle="modal" data-target="#lectionCss2">
+                    Lection 2
+                </a>
+                <a data-toggle="modal" data-target="#lectionCss3">
+                    Lection 3
+                </a>
+            </div>
+            <div class="lectures">
+                <div class="modal fade" id="lectionCss1" tabindex="-1" role="dialog" aria-labelledby="titleCss1" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="titleCss1">Lection1</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body lecture1">
+                                <img src="img/c++.png" class="progPic" alt="">
+                                <div class="lecture1txt">
+                                    <h3>Hello</h3>
+                                    Создание
+                                    Язык возник в начале 1980-х годов, когда сотрудник фирмы Bell Labs Бьёрн Страуструп придумал ряд усовершенствований к языку C под собственные нужды. [6] Когда в конце 1970-х годов Страуструп начал работать в Bell Labs над задачами теории очередей (в приложении к моделированию телефонных вызовов), он обнаружил, что попытки применения существующих в то время языков моделирования оказываются неэффективными, а применение высокоэффективных машинных языков слишком сложно из-за их ограниченной выразительности. Так, язык Симула имеет такие возможности, которые были бы очень полезны для разработки большого программного обеспечения, но работает слишком медленно, а язык BCPL достаточно быстр, но слишком близок к языкам низкого уровня и не подходит для разработки большого программного обеспечения.
+
+                                    Вспомнив опыт своей диссертации, Страуструп решил дополнить язык C (преемник BCPL) возможностями, имеющимися в языке Симула. Язык C, будучи базовым языком системы UNIX, на которой работали компьютеры Bell, является быстрым, многофункциональным и переносимым. Страуструп добавил к нему возможность работы с классами и объектами. В результате практические задачи моделирования оказались доступными для решения как с точки зрения времени разработки (благодаря использованию Симула-подобных классов), так и с точки зрения времени вычислений (благодаря быстродействию C). В первую очередь в C были добавлены классы (с инкапсуляцией), наследование классов, строгая проверка типов, inline-функции и аргументы по умолчанию. Ранние версии языка, первоначально именовавшегося «C with classes» («Си с классами»), стали доступны с 1980 года.
+
+                                    Разрабатывая C с классами, Страуструп написал программу cfront[en] — транслятор, перерабатывающий исходный код C с классами в исходный код простого C. Это позволило работать над новым языком и использовать его на практике, применяя уже имеющуюся в UNIX инфраструктуру для разработки на C. Новый язык, неожиданно для автора, приобрёл большую популярность среди коллег и вскоре Страуструп уже не мог лично поддерживать его, отвечая на тысячи вопросов.
+
+                                    К 1983 году в язык были добавлены новые возможности, такие как виртуальные функции, перегрузка функций и операторов, ссылки, константы, пользовательский контроль над управлением свободной памятью, улучшенная проверка типов и новый стиль комментариев (//). Получившийся язык уже перестал быть просто дополненной версией классического C и был переименован из C с классами в «C++». Его первый коммерческий выпуск состоялся в октябре 1985 года.
+
+                                    До начала официальной стандартизации язык развивался в основном силами Страуструпа в ответ на запросы программистского сообщества. Функцию стандартных описаний языка выполняли написанные Страуструпом печатные работы по C++ (описание языка, справочное руководство и так далее). Лишь в 1998 году был ратифицирован международный стандарт языка C++: ISO/IEC 14882:1998 «Standard for the C++ Programming Language»; после принятия технических исправлений к стандарту в 2003 году — следующая версия этого стандарта — ISO/IEC 14882:2003
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal fade" id="lectionCss2" tabindex="-1" role="dialog" aria-labelledby="titleCss2" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered" style="width: 70%" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="titleCss2">Lecture 2</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body lecture1">
+                                <img src="img/c++.png" class="progPic" alt="">
+                                <div class="lecture1txt">
+                                    <h3>Hello</h3>
+                                    Создание
+                                    Язык возник в начале 1980-х годов, когда сотрудник фирмы Bell Labs Бьёрн Страуструп придумал ряд усовершенствований к языку C под собственные нужды. [6] Когда в конце 1970-х годов Страуструп начал работать в Bell Labs над задачами теории очередей (в приложении к моделированию телефонных вызовов), он обнаружил, что попытки применения существующих в то время языков моделирования оказываются неэффективными, а применение высокоэффективных машинных языков слишком сложно из-за их ограниченной выразительности. Так, язык Симула имеет такие возможности, которые были бы очень полезны для разработки большого программного обеспечения, но работает слишком медленно, а язык BCPL достаточно быстр, но слишком близок к языкам низкого уровня и не подходит для разработки большого программного обеспечения.
+
+                                    Вспомнив опыт своей диссертации, Страуструп решил дополнить язык C (преемник BCPL) возможностями, имеющимися в языке Симула. Язык C, будучи базовым языком системы UNIX, на которой работали компьютеры Bell, является быстрым, многофункциональным и переносимым. Страуструп добавил к нему возможность работы с классами и объектами. В результате практические задачи моделирования оказались доступными для решения как с точки зрения времени разработки (благодаря использованию Симула-подобных классов), так и с точки зрения времени вычислений (благодаря быстродействию C). В первую очередь в C были добавлены классы (с инкапсуляцией), наследование классов, строгая проверка типов, inline-функции и аргументы по умолчанию. Ранние версии языка, первоначально именовавшегося «C with classes» («Си с классами»), стали доступны с 1980 года.
+
+                                    Разрабатывая C с классами, Страуструп написал программу cfront[en] — транслятор, перерабатывающий исходный код C с классами в исходный код простого C. Это позволило работать над новым языком и использовать его на практике, применяя уже имеющуюся в UNIX инфраструктуру для разработки на C. Новый язык, неожиданно для автора, приобрёл большую популярность среди коллег и вскоре Страуструп уже не мог лично поддерживать его, отвечая на тысячи вопросов.
+
+                                    К 1983 году в язык были добавлены новые возможности, такие как виртуальные функции, перегрузка функций и операторов, ссылки, константы, пользовательский контроль над управлением свободной памятью, улучшенная проверка типов и новый стиль комментариев (//). Получившийся язык уже перестал быть просто дополненной версией классического C и был переименован из C с классами в «C++». Его первый коммерческий выпуск состоялся в октябре 1985 года.
+
+                                    До начала официальной стандартизации язык развивался в основном силами Страуструпа в ответ на запросы программистского сообщества. Функцию стандартных описаний языка выполняли написанные Страуструпом печатные работы по C++ (описание языка, справочное руководство и так далее). Лишь в 1998 году был ратифицирован международный стандарт языка C++: ISO/IEC 14882:1998 «Standard for the C++ Programming Language»; после принятия технических исправлений к стандарту в 2003 году — следующая версия этого стандарта — ISO/IEC 14882:2003
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal fade" id="lectionCss3" tabindex="-1" role="dialog" aria-labelledby="titleCss3" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered" style="width: 70%" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="titleCss3">Lecture 3</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body lecture1">
+                                <img src="img/c++.png" class="progPic" alt="">
+                                <div class="lecture1txt">
+                                    <h3>Hello</h3>
+                                    Создание
+                                    Язык возник в начале 1980-х годов, когда сотрудник фирмы Bell Labs Бьёрн Страуструп придумал ряд усовершенствований к языку C под собственные нужды. [6] Когда в конце 1970-х годов Страуструп начал работать в Bell Labs над задачами теории очередей (в приложении к моделированию телефонных вызовов), он обнаружил, что попытки применения существующих в то время языков моделирования оказываются неэффективными, а применение высокоэффективных машинных языков слишком сложно из-за их ограниченной выразительности. Так, язык Симула имеет такие возможности, которые были бы очень полезны для разработки большого программного обеспечения, но работает слишком медленно, а язык BCPL достаточно быстр, но слишком близок к языкам низкого уровня и не подходит для разработки большого программного обеспечения.
+
+                                    Вспомнив опыт своей диссертации, Страуструп решил дополнить язык C (преемник BCPL) возможностями, имеющимися в языке Симула. Язык C, будучи базовым языком системы UNIX, на которой работали компьютеры Bell, является быстрым, многофункциональным и переносимым. Страуструп добавил к нему возможность работы с классами и объектами. В результате практические задачи моделирования оказались доступными для решения как с точки зрения времени разработки (благодаря использованию Симула-подобных классов), так и с точки зрения времени вычислений (благодаря быстродействию C). В первую очередь в C были добавлены классы (с инкапсуляцией), наследование классов, строгая проверка типов, inline-функции и аргументы по умолчанию. Ранние версии языка, первоначально именовавшегося «C with classes» («Си с классами»), стали доступны с 1980 года.
+
+                                    Разрабатывая C с классами, Страуструп написал программу cfront[en] — транслятор, перерабатывающий исходный код C с классами в исходный код простого C. Это позволило работать над новым языком и использовать его на практике, применяя уже имеющуюся в UNIX инфраструктуру для разработки на C. Новый язык, неожиданно для автора, приобрёл большую популярность среди коллег и вскоре Страуструп уже не мог лично поддерживать его, отвечая на тысячи вопросов.
+
+                                    К 1983 году в язык были добавлены новые возможности, такие как виртуальные функции, перегрузка функций и операторов, ссылки, константы, пользовательский контроль над управлением свободной памятью, улучшенная проверка типов и новый стиль комментариев (//). Получившийся язык уже перестал быть просто дополненной версией классического C и был переименован из C с классами в «C++». Его первый коммерческий выпуск состоялся в октябре 1985 года.
+
+                                    До начала официальной стандартизации язык развивался в основном силами Страуструпа в ответ на запросы программистского сообщества. Функцию стандартных описаний языка выполняли написанные Страуструпом печатные работы по C++ (описание языка, справочное руководство и так далее). Лишь в 1998 году был ратифицирован международный стандарт языка C++: ISO/IEC 14882:1998 «Standard for the C++ Programming Language»; после принятия технических исправлений к стандарту в 2003 году — следующая версия этого стандарта — ISO/IEC 14882:2003
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+        <div class="card " >
+            <img class="card-img-top" src="img/html.jpg" alt="Card image cap">
+            <div class="card-body"   >
+                <p class="card-text">Html лекції</p>
+                <div class="lecturesLinks">
+                    <a data-toggle="modal" data-target="#lectionHtml1">
+                        Lection 1
+                    </a>
+                    <a data-toggle="modal" data-target="#lectionHtml2">
+                        Lection 2
+                    </a>
+                    <a data-toggle="modal" data-target="#lectionHtml3">
+                        Lection 3
+                    </a>
+                </div>
+                <div class="lectures">
+                    <div class="modal fade" id="lectionHtml1" tabindex="-1" role="dialog" aria-labelledby="titleHtml1" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="titleHtml1">Lection1</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body ">
+
+
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal fade" id="lectionHtml2" tabindex="-1" role="dialog" aria-labelledby=" titleHtml2" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered" style="width: 70%" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="titleHtml2">Lection 2</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body  ">
+
+
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="modal fade" id="lectionHtml3" tabindex="-1" role="dialog" aria-labelledby="titleHtml3" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered" style="width: 70%" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="titleHtml3">Lection 3</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body lecture1">
+
+
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <div class="card "  >
+        <img class="card-img-top" src="img/js.PNG" alt="Card image cap">
+        <div class="card-body"   >
+            <p class="card-text">Js lectures</p>
+            <div class="lecturesLinks">
+                <a data-toggle="modal" data-target="#lectionJs1">
+                    Lection 1
+                </a>
+                <a data-toggle="modal" data-target="#lectionJs2">
+                    Lection 2
+                </a>
+                <a data-toggle="modal" data-target="#lectionJs3">
+                    Lection 3
+                </a>
+            </div>
+            <div class="lectures">
+                <div class="modal fade" id="lectionJs1" tabindex="-1" role="dialog" aria-labelledby="titleJs1" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="titleJs1">Lection1</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body ">
+
+
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal fade" id="lectionJs2" tabindex="-1" role="dialog" aria-labelledby=" titleJs2" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered" style="width: 70%" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="titleJs2">Lection 2</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body  ">
+
+
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="modal fade" id="lectionJs3" tabindex="-1" role="dialog" aria-labelledby="titleJs3" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered" style="width: 70%" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="titleJs3">Lection 3</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body lecture1">
+
+
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+</div>
+<div class="myWorks" id="worksB">
+    <h2>Моя робота</h2>
+    <div class="col-10 col-xs-12 slider ">
+    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="5"></li>
+        </ol>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img class="d-block w-100" src="img/work11.jpg" alt="First slide">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Мої учні</h5>
+            </div>
+            </div>
+            <div class="carousel-item">
+                <img class="d-block w-100" src="img/work12.jpg" alt="Second slide">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Мої учні</h5>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img class="d-block w-100" src="img/work11.jpg" alt="Third slide">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Мої учні</h5>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img class="d-block w-100" src="img/work12.jpg" alt="Fourth slide">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Мої учні</h5>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img class="d-block w-100 h-100" src="img/work11.jpg" alt="Fifth slide">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Мої учні</h5>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img class="d-block w-100" src="img/work12.jpg" alt="Sixth slide">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Мої учні</h5>
+                </div>
+            </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Назад</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Далі</span>
+        </a>
+    </div>
+
+</div>
+</div>
+<div class="contacts" id="contactsB">
+    <h4>Мої контакти</h4>
+    <div class="contacts_wrapper">
+    <div class="mycontacts">
+
+        <div class="mycontacts_element">
+        <img src="img/iconfinder_phone_1807538.png" class="contactIcon" alt="">
+            <p>+38050889349</p>
+        </div>
+
+        <div class="mycontacts_element">
+            <img src="img/mail.png" class="contactIcon" alt="">
+            <p>alexander.manoly@gmai.com</p>
+        </div>
+
+        <div class="mycontacts_element">
+            <img src="img/houseIcon.png" class="contactIcon" alt="">
+            <p>Rozdilna city, Shevchenko str.</p>
+        </div>
+        </div>
+    <form action="" class="contactForm" >
+        <input type="text" placeholder="Вкажіть своє ім’я">
+        <input type="text" placeholder="Електронна адреса">
+        <input type="text" placeholder="Напишіть повідомлення">
+        <input type="submit" value="Відправити" >
+    </form>
+</div>
+</div>
+<div class="footer">
+    <h6>Створив <span>Олександр Манолій</span> &copy</h6>
+</div>
+
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+</body>
+</html>
